@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="background: #fff;">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=320,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<title>HR喊你“骚扰”Ta</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="../css/staff_holding_share.css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //等比例缩放
+        var beishu =  ($(window).width()/320).toFixed(2)-0.07;
+        if($(window).width()>340){
+            $("meta[name=viewport]").attr("content","width=320,initial-scale="+beishu+",maximum-scale="+beishu+",user-scalable=0"); 
+        }       
+    })
+</script>
+<style type="text/css">
+	.ry_word{ width: 84%; margin-top: 0;}
+</style>
+</head>
+<body style="background: #fff;">
+	<header><a href="javascript:history.go(-1);" class="return bg">返回</a>HR喊你“骚扰”Ta</header>
+	<div class="top_title">集团本部>集团本部人力资源部</div>
+	
+
+	<div class="renyuan_title" style="height: 96px;border-bottom: none;">
+		<img src="../images/zuzhi1.png" width="36" class="zuzhi2" style="top: 8px; left: 12px; ">
+		<div class="ry_word" style="margin-top: 15px;">
+			<span class="bl1"><font style="font-size: 16px;">人力资源部</font></span>
+			<img src="../images/zan1.png" width="12" class="zan" style="margin-left: 20px"><font class="zan_font">赞 100</font><img src="../images/cai1.png" width="12" class="cai"><font class="cai_font">踩 100</font>
+	    </div>
+
+
+	
+	    <div style="clear: both;"></div>
+	    <div class="pinglun_kuang" style="display: none;margin-top: 15px;">
+	    	<a href="#" class="pinglun_item0" style="width: 33%;text-indent: 36px;background: url('../images/duanxin.png') 13px center no-repeat;    background-size: 15px 15px;">建议</a>
+	    	<a href="#" class="pinglun_item1" style="width: 33%;text-indent: 36px;background: url('../images/zan1.png') 13px center no-repeat;    background-size: 15px 15px;">赞一下</a>
+	    	<a href="#" class="pinglun_item2" style="text-indent: 36px; width: 32%; border-right: none; background: url('../images/cai1.png') 13px center no-repeat;    background-size: 15px 15px;">踩一下</a>
+	    	<!-- <a href="#" class="pinglun_item3">印象墙</a> -->
+	    </div>
+	    <div>
+	    <img src="../images/pinglun.png" class="pinglun_btn" width="30" style="    margin-top: 22px;">
+	    </div>
+	</div>
+
+	<div class="yinxiang">
+		<img src="../images/duanxin_big.png" width="20" style="float: left;margin-left: 5px;margin-top: 4px; ">
+		<input type="text" class="gr_input" placeholder="我有好建议.....">
+		<a href="#" class="fasong" style="margin-top: 2px;">发送</a>
+		<div style="clear: both;"></div>
+		<div class="pl_item">
+			<img src="../images/zuzhi2.png" width="36" style="margin-left: 15px;float: left;">
+			<div class="shijian_item"><font>李斯</font>回复<font>章三</font><span>2016/8/19   17:52</span></div>
+			<div class="shijian_item">您好，您的建议已被采纳。</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="pl_item">
+			<img src="../images/zuzhi2.png" width="36" style="margin-left: 15px;float: left;">
+			<div class="shijian_item"><font>李斯</font>回复<font>章三</font><span>2016/8/19   17:52</span></div>
+			<div class="shijian_item">您好，您的建议已被采纳。</div>
+			<div style="clear: both;"></div>
+		</div>
+
+		<div class="pl_item">
+			<img src="../images/zuzhi2.png" width="36" style="margin-left: 15px;float: left;">
+			<div class="shijian_item"><font>李斯</font><span>2016/8/19   17:52</span></div>
+			<div class="shijian_item">您好，您的建议已被采议已被采议已被采议已被采议已被采议已被采议已被采议已被采议已被采议已被采议已被采议已被采议已被采议已被采纳。</div>
+			<div style="clear: both;"></div>
+		</div>
+
+
+
+
+
+		<div style="clear: both;"></div>
+	</div>
+
+	<div style="width:100%;height: 50px;">
+
+	</div>
+
+
+
+
+
+<script type="text/javascript">
+	$(function(){
+		// $(".zan").click(function(){
+		// 	if("../images/zan1.png"==$(this).attr("src")){
+		// 		$(this).attr("src","../images/zan.png").siblings(".zan_font").css("color","#5076a5");
+		// 	}else if("../images/zan.png"==$(this).attr("src")){
+		// 		$(this).attr("src","../images/zan1.png").siblings(".zan_font").css("color","#817e7e");
+		// 	}
+		// });
+
+		$(".pinglun_item1").click(function(){
+			// alert($(this).css("background-image"));
+			if("取消赞"==$(this).html()){
+				$(this).css("background-image","url(../images/zan1.png)").html("赞一下");
+				$(".zan").attr("src","../images/zan1.png").siblings(".zan_font").css("color","#817e7e");
+			}else if("赞一下"==$(this).html()){
+				$(this).css("background-image","url(../images/zan.png)").html("取消赞");
+				$(".zan").attr("src","../images/zan.png").siblings(".zan_font").css("color","#5076a5");;
+			}
+		});
+
+		$(".pinglun_item2").click(function(){
+			// alert($(this).css("background-image"));
+			if("取消踩"==$(this).html()){
+				$(this).css("background-image","url(../images/cai1.png)").css("color","#5076a5").html("踩一下");
+				$(".cai").attr("src","../images/cai1.png");
+			}else if("踩一下"==$(this).html()){
+				$(this).css("background-image","url(../images/cai.png)").css("color","#817e7e").html("取消踩");
+				$(".cai").attr("src","../images/cai.png");
+			}
+		});
+
+
+
+		// $(".cai").click(function(){
+		// 	if("../images/cai1.png"==$(this).attr("src")){
+		// 		$(this).attr("src","../images/cai.png");
+		// 	}else if("../images/cai.png"==$(this).attr("src")){
+		// 		$(this).attr("src","../images/cai1.png");
+		// 	}
+		// });
+
+		$(".pinglun_btn").click(function(){
+			$(".pinglun_kuang").toggle();
+		});
+	})
+</script>
+</body>
+</html>
